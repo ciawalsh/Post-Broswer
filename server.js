@@ -12,7 +12,7 @@ app.use('/js', express.static(path.join(__dirname, '/app/js')));
 app.set('port', (process.env.PORT || 3001))
 
 app.get('/', function(request, response) { 
-  This is checking if the user is on a Mac or Windows.
+  // This is checking if the user is on a Mac or Windows.
   if(os.platform() === 'darwin' | 'win32'){
     response.writeHead(302, {Location: 'http://www.candyspace.com'});
     response.end();
