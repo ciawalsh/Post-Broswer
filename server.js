@@ -1,7 +1,6 @@
 var express = require('express')
 var app = express();
 var http = require('http');
-var os = require('os');
 var path = require('path');
 
 app.set('views', __dirname + '/app/views');
@@ -13,7 +12,7 @@ app.set('port', (process.env.PORT || 3001))
 
 app.get('/', function(request, response) { 
   // This is checking if the user is on a Mac or Windows.
-  if(os.platform() === 'darwin' | 'win32'){
+  if(process.platform === 'darwin' | 'win32'){
     response.writeHead(302, {Location: 'http://www.candyspace.com'});
     response.end();
   } else {
