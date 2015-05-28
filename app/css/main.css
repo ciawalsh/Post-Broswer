@@ -1,0 +1,23 @@
+ul { 
+  list-style-type: none; 
+  margin: 1em; 
+  padding: 0; 
+  margin-bottom: 10px; 
+}
+
+li { 
+  margin: 5px; 
+  text-align: center; 
+  width: auto; 
+}
+
+.center {
+  text-align: center;
+}
+
+.ui-state-highlighted {
+  border: 1px solid #d3d3d3;
+  background-color: yellow;
+  font-weight: normal;
+  color: #555555;
+}
