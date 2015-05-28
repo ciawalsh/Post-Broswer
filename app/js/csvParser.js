@@ -28,9 +28,6 @@ Papa.parse(file, {
     }
 }); 
 
-$(".post").click(function() {
-  $(this).removeClass("post");
-});
 
 var wrapObjects = function() {
   var rows;

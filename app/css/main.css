@@ -2,7 +2,8 @@ ul {
   list-style-type: none; 
   margin: 1em; 
   padding: 0; 
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+  overflow: scroll; 
 }
 
 li { 
@@ -15,16 +16,7 @@ li {
   text-align: center;
 }
 
-.ui-state-highlighted {
-  border: 1px solid #d3d3d3;
-  background-color: yellow;
-  font-weight: normal;
-  color: #555555;
-}
-
-.scroll-bar {
-  background-color: red;
-  float: right;
-  height: 100%;
-  width: 10%;
+.ui-state-default:active {
+  border: 1px solid #132b14 ;
+  color:#132b14 ;
 }
